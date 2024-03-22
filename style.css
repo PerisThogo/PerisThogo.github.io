@@ -488,3 +488,71 @@ footer {
     color: #fff;
     padding: 10px 0;
 }
+/* Override existing styles for h1 */
+h1 {
+    color: blue; /* Change the color to blue */
+    font-size: 24px; /* Change the font size */
+}
+
+/* Override existing styles for the form */
+form {
+    background-color: #f9f9f9; /* Change the background color */
+    padding: 20px; /* Add padding */
+}
+
+/* Override existing styles for the input fields */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Make the input fields and textarea full width */
+    padding: 8px; /* Add padding */
+    margin-bottom: 10px; /* Add margin between elements */
+}
+
+/* Override existing styles for the submit button */
+button[type="submit"] {
+    background-color: green; /* Change the background color */
+    color: white; /* Change the text color */
+    padding: 10px 20px; /* Add padding */
+    border: none; /* Remove border */
+    cursor: pointer; /* Add pointer cursor */
+}
+contact.html:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - sweet Cakes</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Contact Us</h1>
+    
+    <p>For any inquiries or orders, please feel free to reach out to us:</p>
+    
+    <h2>Our Contact Information:</h2>
+    <ul>
+        <li>Email: info@sweet.com</li>
+        <li>Phone: 123-456-7890</li>
+        <li>Address: 123 Main Street, City, Country</li>
+    </ul>
+    
+    <h2>Send us a Message:</h2>
+    <form action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit">Send Message</button>
+    </form>
+</body>
+</html>
