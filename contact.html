@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - sweet Cakes</title>
+    <!--Link to external CSS file-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+</head>
+<body>
+    <h1>Contact Us</h1>
+    
+    <p>For any inquiries or orders, please feel free to reach out to us:</p>
+    
+    <h2>Our Contact Information:</h2>
+    <ul>
+        <li>Email: info@sweet.com</li>
+        <li>Phone: 123-456-7890</li>
+        <li>Address: 123 Main Street, City, Country</li>
+    </ul>
+    
+    <h2>Send us a Message:</h2>
+    <form action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        
+        <button type="submit">Send Message</button>
+    </form>
+</body>
+</html>

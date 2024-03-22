@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sweet Cakes - Home</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>Welcome to sweet Cakes</h1>
+    <nav>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cakes.html">Cakes</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Featured Cakes</h2>
+        <img src="images/heather-barnes-_TN1m5R1pFI-unsplash.jpg" alt="Cake 1">
+        <img src="images/anthony-espinosa-6iqpLKqeaE0-unsplash.jpg" width="380" height="90" >
+    </main>
+    <header>
+        
+        <script>
+            function validateForm() {
+                var name = document.forms["contactForm"]["name"].value;
+                if (name == "") {
+                    alert("Name must be filled out");
+                    return false;
+                }
+                // Add more validation rules as needed
+            }
+            </script>
+            
+            <form name="contactForm" onsubmit="return validateForm()">
+                Name: <input type="text" name="name"><br>
+                Email: <input type="email" name="email"><br>
+                <input type="submit" value="Submit">
+            </form>
+    </header>
+
+    <footer>
+        <p>&copy; 2024 sweet Cakes. All rights reserved.</p>
+    </footer>
+</body>
+</html>
